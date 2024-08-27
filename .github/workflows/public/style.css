@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.hidden {
+    display: none;
+}
+.form-container, .relato-container {
+    margin-top: 20px;
+    text-align: left;
+    color: #004e4c;
+}
+.header-container {
+    background-color: #00995d;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.header-container h1 {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+.description-text {
+    margin-top: 40px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #004e4c;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+.button-box {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.button-link {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00995d;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: auto;
+    display: inline-block;
+    text-align: center;
+}
+.button-link:hover {
+    background-color: #004e4c;
+}
+.text-above-button {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #004e4c;
+}
+.subtext {
+    font-size: 14px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    color: #004e4c;
+}
+.info-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #004e4c;
+    text-align: left;
+}
+.center-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.center-button a, .center-button button {
+    flex: 1;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form label {
+    font-weight: bold;
+    color: #004e4c;
+}
+form input, form select, form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+}
+.required-fields {
+    color: #f47920;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.button-group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00995d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.button-group button:hover {
+    background-color: #004e4c;
+}
+.protocol-message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #b1d34b;
+    font-weight: bold;
+    text-align: center;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00995d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button:hover {
+    background-color: #004e4c;
+}
+
+#response-container {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #004e4c;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-protocol {
+    height: 10px; /* Ajuste a altura conforme necessário */
+    padding: 10px; /* Adicione padding para melhorar a aparência */
+    font-size: 16px; /* Aumente o tamanho da fonte se necessário */
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responder Denúncia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .container h1 {
+            background-color: #00995d;
+            color: white;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+            margin: -20px -20px 20px -20px;
+            text-align: center;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #004e4c;
+        }
+
+        input[type="text"], textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #00995d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 200px;
+            align-self: center;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #004e4c;
+        }
+
+        #denuncia-container {
+            margin-top: 20px;
+        }
+
+        #denuncia-container h3 {
+            color: #004e4c;
+        }
+
+        #mensagem {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #b1d34b;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responder Denúncia</h1>
+
+        <div class="form-container">
+            <label for="protocolo">Número do Protocolo:</label>
+            <input type="text" id="protocolo" name="protocolo" required>
+
+            <button onclick="buscarDenuncia()">Buscar Denúncia</button>
+
+            <div id="denuncia-container" class="hidden">
+                <h3>Denúncia:</h3>
+                <p id="descricao"></p>
+
+                <label for="resposta">Responder:</label>
+                <textarea id="resposta" rows="5"></textarea>
+
+                <button onclick="responderDenuncia()">Enviar Resposta</button>
+            </div>
+        </div>
+
+        <div id="mensagem" class="hidden"></div>
+    </div>
+
+    <script src="responderDenuncia.js"></script>
+</body>
+</html>
+
